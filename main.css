@@ -175,3 +175,14 @@ footer div a{
 footer div a:hover{
 	color:rgb(255, 0, 0);
 }
+#mute {
+	height: 3rem;
+	float: right;
+	margin:3rem;
+}
+#mute:hover {
+	border: 5px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+}

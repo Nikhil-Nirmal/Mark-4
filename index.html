@@ -5,8 +5,32 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body">
 	<header>
+		<img src="mute.png" alt="" id="mute">
+		<audio id = "mysong" autoplay="autoplay" loop="loop">
+			<source src="music.mp3" type="audio/mp3">
+		</audio>
+		<script>
+
+			var mySong  = document.getElementById("mysong")
+			var muteicon = document.getElementById("mute")
+			
+			
+			
+			muteicon.onclick  = function(){
+				if(mySong.paused == true){
+					muteicon.src = "unmute.png"
+					mySong.play()
+				}
+				else{
+					mySong.pause()
+					muteicon.src = "mute.png"
+				}
+				
+			}
+			
+		</script>
 		<nav>
 			<marquee class="marq">
 				Welcome to my portfolio
