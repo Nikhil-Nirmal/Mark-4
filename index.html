@@ -13,19 +13,22 @@
 		</audio>
 		<script>
 
-			var mySong  = document.getElementById("mysong")
-			var muteicon = document.getElementById("mute")
+			var mySong  = document.getElementById("mysong");
+			var muteicon = document.getElementById("mute");
+			var flag = false;
+								     
 			
 			
 			
 			muteicon.onclick  = function(){
-				if(mySong.paused == true){
-					muteicon.src = "unmute.png"
-					mySong.play()
+				if(mySong.paused == true && flag == true){
+					muteicon.src = "unmute.png";
+					mySong.play();
 				}
 				else{
-					mySong.pause()
-					muteicon.src = "mute.png"
+					flag = true;
+					mySong.pause();
+					muteicon.src = "mute.png";
 				}
 				
 			}
