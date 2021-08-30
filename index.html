@@ -15,18 +15,16 @@
 
 			var mySong  = document.getElementById("mysong");
 			var muteicon = document.getElementById("mute");
-			var flag = true;
-								     
+								 
 			
 			
 			
 			muteicon.onclick  = function(){
-				if(mySong.paused == true && flag == false){
+				if(mySong.paused == true){
 					muteicon.src = "unmute.png";
 					mySong.play();
 				}
 				else{
-					flag = true;
 					mySong.pause();
 					muteicon.src = "mute.png";
 				}
