@@ -180,9 +180,4 @@ footer div a:hover{
 	float: right;
 	margin:3rem;
 }
-#mute:hover {
-	border: 1px;
-	border-style: solid;
-	border-color: white;
-	border-radius: 50%;
-}
+
